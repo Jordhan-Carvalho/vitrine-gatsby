@@ -3,9 +3,11 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { Layout, Menu, Icon, Typography } from 'antd'
 import { ReactComponent as LogoIcon } from '@static/logo.svg'
+import { Link } from 'gatsby'
 
 const LandingLayout = ({ children }) => {
   const [collapsed, toggle] = useState(true)
+
   return (
     <div className='landing-layout'>
       <Layout>
@@ -29,20 +31,25 @@ const LandingLayout = ({ children }) => {
           <Menu
             theme='light'
             mode='inline'
-            defaultSelectedKeys={['1']}
+            // defaultSelectedKeys={['1']}
+            // selectedKeys={[key]}
+
             className='border-0'
           >
             <Menu.Item key='1'>
               <Icon type='user' />
-              <span>nav 1</span>
+              <span>Vitrine Virtual</span>
+              <Link to='/' />
             </Menu.Item>
             <Menu.Item key='2'>
-              <Icon type='video-camera' />
-              <span>nav 2</span>
+              <Icon type='lock' />
+              <span>Política de Privacidade</span>
+              <Link to='/privacidade' />
             </Menu.Item>
             <Menu.Item key='3'>
-              <Icon type='upload' />
-              <span>nav 3</span>
+              <Icon type='profile' />
+              <span>Termos e Condições</span>
+              <Link to='/termos' />
             </Menu.Item>
           </Menu>
         </Layout.Sider>
