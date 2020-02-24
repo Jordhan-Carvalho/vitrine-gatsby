@@ -6,11 +6,12 @@ export default () => (
   <LandingLayout>
     <div className='flex flex-col items-center'>
       <Typography.Title className='text-primary-color'>
-        Fast in every way that matters
+        Vitrine Virtual, jogá lá no Vitrine!
       </Typography.Title>
       <Typography.Title level={4} className='text-gray-600'>
-        Gatsby is a free and open source framework based on React that helps
-        developers build blazing fast websites and apps
+        Plataforma de compra e venda de produtos usados e novos, além de
+        catalogo de prestação de serviços na região oeste da bahia (Barreiras,
+        Luis Eduardo Magalhães)
       </Typography.Title>
       <img src='/cover.png' alt='logo' className='mt-10' />
     </div>
