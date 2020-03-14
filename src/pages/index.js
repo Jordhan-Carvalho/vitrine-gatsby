@@ -6,7 +6,7 @@ export default () => (
   <LandingLayout>
     <div className='flex flex-col items-center'>
       <Typography.Title className='text-primary-color'>
-        Vitrine Virtual, jogá lá no Vitrine!
+        Vitrine Virtual, joga lá no Vitrine!
       </Typography.Title>
       <Typography.Title level={4} className='text-gray-600'>
         Plataforma de compra e venda de produtos novos e usados, além de
